@@ -1,0 +1,120 @@
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-mobile {
+    overflow: hidden;
+}
+
+.banner {
+    margin-right: -80px;
+    margin-left: -80px;
+    margin-top: -120px;
+}
+
+.banner img {
+    border-radius: 0 0 50% 50%;
+    opacity: 0.9;
+}
+
+.setting {
+    position: absolute;
+    float: right;
+    top: 30px;
+    right: 15px;
+    z-index: 3;
+}
+.setting img {
+
+    width: 20px;
+    height: auto;
+}
+
+
+
+.account-box {
+    position: relative;
+    top: -140px;
+
+    z-index: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.account-box .link-orange {
+    color: #f65e39!important;
+    font-size: 80%;
+
+}
+
+.account-box .email {
+    font-size: 75%;
+}
+
+.account-box .avatar {
+    padding-right: 0;
+    
+}
+
+.account-box .avatar img {
+    border-radius: 50%; 
+}
+
+.account-box .coin img {
+	width: 25px;
+	height: auto;
+}
+.account-box .coin{
+	padding-left: 30px!important;
+}
+.function {
+    position: relative;
+    top: -80px;
+}
+.function .item {
+    padding: 0;
+}
+
+.become-host button {
+	position: relative;
+	top: -30px;
+    padding: 15px 40px;
+	font-weight: 600;
+	border: 0;
+	font-size: 1rem;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 20px;
+}
+.footer {
+	padding: 0 15px;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	z-index: 1000;
+	box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.item img {
+	width: 25px;
+}
+
+.item span {
+	font-size: 10px;
+	font-weight: bold;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Travelux</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="brand">
+			<img src="./images/signup/logo.png" alt="#">
+		</div>
+		<div class="close">
+			<a href="#">
+				<img src="./images/signup/close.png" alt="close">
+			</a>
+		</div>
+	</nav>
+	<div class="space"></div>
+	<div class="content body">
+		<h1>Chào mừng bạn đến với Travelux!</h1>
+		<div class="signin">
+			<button class="btn google">
+				<img src="./images/signup/gg.png" alt="gg">
+				<p>ĐĂNG NHẬP VỚI GOOGLE</p>
+			</button>
+			<button class="btn facebook">
+				<img src="./images/signup/fb.png" alt="fb">
+				<p>ĐĂNG NHẬP VỚI FACEBOOK</p>
+			</button>
+		</div>
+		<div class="or">
+			<span>
+				hoặc
+			</span>
+		</div>
+		<div class="signup-form">
+			<div class="item">
+				<p>Tên</p>
+				<input type="text">
+			</div>
+			<div class="item">
+				<p>Họ và tên dêm</p>
+				<input type="text">
+			</div>
+			<div class="item">
+				<p>Địa chỉ Email</p>
+				<input type="email">
+			</div>
+			<div class="item">
+				<p>Điện thoại</p>
+				<input type="number">
+			</div>
+			<div class="item">
+				<p>Mật khẩu</p>
+				<input type="password">
+			</div>
+		</div>
+		<button id="signup" class="btn signup">
+			<p>ĐĂNG KÝ BẰNG EMAIL</p>
+		</button>
+		<div class="having-account">
+			<p>Bạn đã có tài khoản Travelux?</p>
+			<a href="./login.html">ĐĂNG NHẬP</a>
+		</div>
+	</div>
+
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.signup-form').hide();
+
+			$('#signup').click(() => {
+				$('.signup-form').show(500);
+			})
+		});
+	</script>
+</body>
+
+</html>

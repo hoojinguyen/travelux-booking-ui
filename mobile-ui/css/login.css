@@ -1,0 +1,90 @@
+* {
+	outline: none;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+}
+
+.navbar {
+	width: 100%;
+	height: 57px;
+	padding: 8px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.navbar img {
+	width: 35px;
+}
+
+.space {
+	height: 57px;
+	width: 100%;
+}
+
+.content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-weight: bold;
+	margin: 30px 0;
+}
+
+.header a,
+.header h1 {
+	margin: 0;
+}
+
+.header a {
+	text-decoration: none;
+	color: #2dba18;
+}
+
+.form {
+	margin: 30px 0;
+}
+
+.form p {
+	font-size: 13px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.45);
+}
+
+.form input {
+	border: none;
+	padding: 8px 0;
+	font-size: 18px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.form input::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+	font-family: inherit;
+	font-size: 16px;
+	width: 50%;
+	margin: 15px auto;
+	padding: 10px 20px;
+	border: none;
+	font-weight: 500;
+	border-radius: 30px;
+	text-align: center;
+}
+
+.btn-classic {
+	color: #fff;
+	background: linear-gradient(90deg, #017a15, #2ed80c);
+
+}

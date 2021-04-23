@@ -1,0 +1,158 @@
+.popular-area .slick-slide {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.popular-area {
+	margin: auto;
+}
+
+.popular-tag {
+	cursor: pointer;
+	padding: 18px 24px;
+	border-radius: 3px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	position: relative;
+	width: 30rem !important;
+	margin-right: 2rem;
+}
+
+.popular-title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.slick-slide {
+	width: 25rem !important;
+	margin-right: 2.5rem;
+}
+
+.slick-prev,
+.slick-next {
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border: none;
+	box-shadow: 0 0 7px -4px #000;
+	border-radius: 56px;
+	position: absolute;
+	z-index: 1;
+}
+
+.slick-prev {
+	left: -15px;
+}
+
+.slick-next {
+	right: -15px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+	color: #000;
+}
+
+.btn-filter {
+	font-size: inherit;
+	border: 1px solid #e6e6e6;
+	color: #222;
+	background-color: #fff;
+	padding: 0.8rem 1.2rem;
+	border-radius: 0.5rem;
+	font-weight: bold;
+}
+
+.btn-filter:hover {
+	color: #fff;
+	border: 1px solid #fff;
+	background-image: linear-gradient(90deg, #f65e38 0, #f68a39 51%, #f65e38);
+}
+
+.notification {
+	font-size: 1.6rem;
+}
+
+.title {
+	margin-bottom: 2rem;
+}
+
+.title h1 {
+	font-size: 2.4rem;
+}
+
+.card-title {
+	padding-top: 1rem;
+	font-weight: bold;
+}
+
+.card {
+	padding: 1rem 0.8rem !important;
+}
+
+.card-header {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	display: -webkit-box;
+	max-height: 52px;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin-bottom: 0.6rem;
+}
+
+.discount {
+	top: 15px;
+	bottom: auto;
+	left: 15px;
+	color: #fff;
+	background: #f65e39;
+	padding: 0.2rem 0.7rem;
+	border-radius: 1rem;
+}
+
+.icon--24 {
+	width: 24px;
+}
+
+.heart {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: auto;
+	cursor: pointer;
+}
+.heart img {
+	width: 30px;
+}
+
+.page-link {
+	font-size: 16px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	border: none;
+	margin: 0 0.3rem;
+	text-align: center;
+}
+
+.page-item.active .page-link {
+	color: #fff !important;
+	background: #f65e39;
+}
+
+@media (min-width: 1200px) {
+	.col-lg-20 {
+		flex-basis: 20%;
+		max-width: 20%;
+	}
+}

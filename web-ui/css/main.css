@@ -1,0 +1,125 @@
+html {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+* {
+  outline: none !important;
+}
+
+@font-face {
+  font-family: "TravelLux";
+  src: url("/fonts/lato-regular.ttf");
+}
+
+@font-face {
+  font-family: "TravelLux";
+  src: url("/fonts/lato-light.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TravelLux";
+  src: url("/fonts/lato-black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TravelLux";
+  src: url("/fonts/lato-bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "TravelLux" !important;
+  /* -webkit-text-stroke: 0.025em rgba(51, 51, 51, 0.5); */
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: Lato, sans-serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar {
+  height: 75px;
+  /* padding: 1rem 2rem; */
+  border-bottom: 1px solid #f2f2f2;
+  background: #fff;
+}
+
+.footer-menu {
+  list-style: none;
+}
+
+.footer-menu > li {
+  padding-right: 10px;
+}
+
+.nav-item {
+  margin-left: 1.2rem;
+}
+
+a {
+  color: #222 !important;
+}
+
+a:hover {
+  color: #f65e39 !important;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  /* .img-fluid {
+		width: 250px !important;
+	} */
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    height: 80px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.text-orange {
+  color: #f65e39;
+}
+
+.btn-orange {
+  color: white;
+  background: #f65e39;
+}
+.btn-orange:hover {
+  color: white;
+}
+
+.btn-finish {
+  width: 300px;
+}

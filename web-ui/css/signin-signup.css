@@ -1,0 +1,138 @@
+.box__title {
+	font-weight: 900;
+}
+
+.box__text {
+	font-size: 1.5rem;
+}
+
+.pd-left-right {
+	padding: 0 5rem;
+}
+
+.container-limit {
+	max-width: calc(1296px + 5.6rem);
+}
+
+.welcome {
+	background: linear-gradient(90deg, #f65e38 0, #f68a39 51%, #f65e38);
+	-webkit-text-stroke: 0.025em rgba(255, 255, 255, 0.472);
+	padding: 5rem 0rem 4rem 5rem;
+	color: #fff;
+	font-size: 1.8rem;
+}
+
+.form-group i {
+	position: relative;
+	float: right;
+	right: 2rem;
+	top: -3.2rem;
+}
+
+.welcome .row {
+	margin: 0px;
+}
+
+.feature {
+	padding-top: 20px;
+	padding-left: 3rem;
+}
+
+.feature__title {
+	font-weight: 700;
+	padding-top: 25px;
+}
+
+.feature__content {
+	padding-top: 15px;
+	font-size: 1.5rem;
+}
+
+.account {
+	margin-top: -5rem;
+	background: #fff;
+	box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.02), 0 24px 38px 3px rgba(0, 0, 0, 0.04),
+		0 11px 15px -7px rgba(0, 0, 0, 0.05);
+	border-radius: 0.625rem;
+	padding: 3rem;
+}
+
+@media (min-width: 992px) {
+	.account {
+		padding: 3rem;
+		margin-top: -15rem;
+	}
+}
+
+.account input {
+	height: 5rem !important;
+	border: 1px solid #e6e6e6;
+	transition: all 0.3s;
+	font-size: 1.5rem !important;
+	width: 100%;
+	border-radius: 5px;
+	padding: 1rem 2.5rem !important;
+	overflow: visible;
+	font-weight: 100;
+}
+
+.account label {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+input:focus {
+	border-color: #f65e39 !important;
+	/* box-shadow: 0 0 5px 0 rgba(51, 212, 57, 0.5) !important; */
+	outline: none;
+}
+
+input:not(.input--square) {
+	border-radius: 3rem;
+}
+
+.btn-signin-3rd {
+	border: 0.5px solid rgba(212, 208, 208, 0.6);
+	font-weight: 400;
+}
+
+.btn-sign {
+	outline: 0;
+	cursor: pointer;
+	border-radius: 3rem;
+	font-size: 1.5rem;
+	display: inline-block;
+	transition: all 0.3s;
+	text-align: center;
+	width: 100%;
+	height: 6rem;
+}
+
+.btn-sign .icon {
+	position: relative;
+	float: right;
+	right: 1rem;
+}
+
+.btn-sign:hover {
+	color: #f65e39;
+}
+
+.btn-grad:hover {
+	color: #fff;
+}
+
+.btn-grad {
+	-webkit-text-stroke: 0.025em rgba(255, 255, 255, 0.472);
+	background-image: linear-gradient(90deg, #f65e38 0, #f68a39 51%, #f65e38);
+	background-size: 200% auto;
+	color: #fff;
+}
+
+.btn-grad:hover {
+	background-position: 100%;
+}
+
+.btn-shadow {
+	/* box-shadow: 0 4px 12px 0 rgba(51, 212, 24, 0.4); */
+}

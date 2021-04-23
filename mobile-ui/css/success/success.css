@@ -1,0 +1,10 @@
+main .content {
+	display: flex!important;
+	flex-direction: row;
+	align-content: center;
+}
+
+
+.booking-now {
+	font-size: 14px;
+}

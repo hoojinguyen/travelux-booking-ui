@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "TravelLux";
+    src: url('/fonts/lato-regular.ttf');
+}
+
+@font-face {
+    font-family: "TravelLux";
+    src: url('/fonts/lato-light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TravelLux";
+    src: url('/fonts/lato-black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TravelLux";
+    src: url('/fonts/lato-bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.img-responsive {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+body {
+    font-family: "TravelLux" !important;
+    -webkit-text-stroke: .025em rgba(51, 51, 51, 0.50);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "→";
+}
+
+ol.breadcrumb {
+    background-color: #ffffff00;
+}
+
+.copy-code-btn {
+    color: #f65e39;
+}
+
+.feature-deal .description {
+    color: #555;
+}
+
+.font-weight-boldest {
+    font-weight: 900;
+}
+
+.stay-time {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 17px;
+    margin-right: 1rem;
+}
+
+.coupon-step__count {
+    display: inline-flex;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    color: #f65e39;
+    border: 2px solid;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 24px 0 17px;
+}
+
+.counpon-step__title {
+    font-weight: 700;
+}

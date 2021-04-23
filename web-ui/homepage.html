@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travelux</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responesive.css">
+    <link rel="stylesheet" href="owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet"> 	
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg w-100 align-items-center pd-left-right">
+        <a href="homepage.html" class="navbar-brand">
+            <img class="img-fluid" src="img/logo-text.png" width="220" height="50">
+        </a>
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/icons/menu.svg" width="24" height="24">
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Hotline: <b>18006586</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <button class="btn btn-host">Trở thành chủ nhà</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./signin-signup.html" class="nav-link">Đăng ký</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./signin-signup.html" class="nav-link">Đăng nhập</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle btn-dropdown" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img src="img/icons/vi.svg" width="24" height="24">
+                            <span class="ml-2">VNĐ</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <div class="row py-3">
+                                <div class="col-12 col-lg-6">
+                                    <a class="dropdown-item mb-3" href="#">
+                                        <img src="img/icons/vi.svg" width="16" height="16">
+                                        <span class="px-3">Tiếng Việt</span>
+                                    </a>
+                                    <a class="dropdown-item mb-3" href="#">
+                                        <img src="img/icons/en.svg" width="16" height="16">
+                                        <span class="px-3">English</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="img/icons/ko.svg" width="16" height="16">
+                                        <span class="px-3">Korean</span>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <a class="dropdown-item mb-3" href="#">
+                                        <b>VND</b>
+                                        <span class="px-3">Việt Nam Đồng</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <b>USD</b>
+                                        <span class="px-3">Dollar USA</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-toggle="collapse" class="btn-close" data-target="#navbarNav">
+                    <img src="img/icons/close.svg" alt="Menu" width="24" height="24">
+                </li>
+            </ul>
+        </div>
+        <div class="mask" style></div>
+    </nav>
+    <div class="container-fluid pd-left-right">
+        <div class="booking">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-xs-12">
+                    <div class="input-booking">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Tìm kiếm" id="search">
+						<div class="search-suggest">
+							<h3 class="mb-4">TÌM KIẾM GẦN ĐÂY</h3>
+							<div class="pb-3 d-flex">
+								<svg version="1.1" viewBox="0 0 16 16" width="16" height="16"><path pid="0" d="M8 0C4.692 0 2 2.6 2 5.795 2 9.76 7.37 15.58 7.598 15.827c.215.23.59.23.804 0C8.631 15.58 14 9.76 14 5.795 14 2.599 11.308 0 8 0zm0 8.71c-1.665 0-3.019-1.308-3.019-2.915 0-1.608 1.354-2.916 3.019-2.916s3.019 1.308 3.019 2.916C11.019 7.402 9.665 8.71 8 8.71z" fill="#222"></path></svg>
+								
+								<a  class="search-suggest-text" href="/roomlist.html">
+									<p>Đà Lạt, Lâm Đồng, Vietnam (1377)</p> 
+									<small>City</small>
+								</a>
+								
+							</div>
+							<div class="pb-3 d-flex">
+								<svg version="1.1" viewBox="0 0 16 16" width="16" height="16"><path pid="0" d="M8 0C4.692 0 2 2.6 2 5.795 2 9.76 7.37 15.58 7.598 15.827c.215.23.59.23.804 0C8.631 15.58 14 9.76 14 5.795 14 2.599 11.308 0 8 0zm0 8.71c-1.665 0-3.019-1.308-3.019-2.915 0-1.608 1.354-2.916 3.019-2.916s3.019 1.308 3.019 2.916C11.019 7.402 9.665 8.71 8 8.71z" fill="#222"></path></svg>
+								<div class="search-suggest-text">
+									<p>Đồng Nai, Vietnam (20)</p> 
+									<small>State</small>
+								</div>
+							</div>
+						</div>
+                    </div>					
+                </div>
+                <div class="col-lg-3 col-md-12 col-xs-12">  
+                    <div class="input-booking" >
+                        <i class="fa fa-calendar-times-o"></i>
+                        <input type="text" name="dates" placeholder="Thời gian đến và đi">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-xs-12">
+                    <div class="input-booking">
+                        <i class="fa fa-user"></i>
+                        <input type="number" placeholder="Số khách">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-xs-12">
+                    <div class="button-booking">
+                            <button id="btnSearch">Tìm kiếm</button>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid">
+        <!-- Promotion Start -->
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Ưu đãi độc quyền</p>
+                </div>
+                <div class="description">
+                    <p>Chỉ có tại Travelux, hấp dẫn và hữu hạn, book ngay! </p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme slider3Img">
+                    <div class="item">
+                        <a href="/promotion.html"> <img src="img/imgDiscount/discount1.png" alt=""> </a>
+                    </div>
+                    <div class="item">
+                        <a href="/promotion.html""> <img src="img/imgDiscount/discount2.jpg" alt=""> </a>
+                    </div>
+                    <div class="item">
+                        <a href="/promotion.html""> <img src="img/imgDiscount/discount3.jpg" alt=""> </a>
+                    </div>
+                    <div class="item">
+                        <a href="/promotion.html""> <img src="img/imgDiscount/discount4.jpg" alt=""> </a>
+                    </div>
+                    <div class="item">
+                        <a href="/promotion.html""><img src="img/imgDiscount/discount5.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="/promotion.html""> <img src="img/imgDiscount/discount6.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="/promotion.html""> <img src="img/imgDiscount/discount7.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Promotion End -->
+
+        <!-- City Start -->
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Địa điểm nổi bật</p>
+                </div>
+                <div class="description">
+                    <p>Cùng Travelux bắt đầu chuyến hành trình chinh phục thế giới của bạn </p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme sliderCity">
+                    <div class="item">
+                        <a href="/roomlist.html"> <img src="img/imgCity/dalat.png" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Đà Lạt</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist.html"><img src="img/imgCity/hanoi.png" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Hà Nội</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist.html"><img src="img/imgCity/hochiminh.png" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Hồ Chí Minh</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist.html"><img src="img/imgCity/nhatrang.jpg" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Nha Trang</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist.html"><img src="img/imgCity/quangninh.png" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Quảng Ninh</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist.html"> <img src="img/imgCity/vungtau.png" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Vũng Tàu</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist.html"> <img src="img/imgCity/hoian.png" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Hội An</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist.html"> <img src="img/imgCity/danang.png" alt=""></a>
+                        <div class="infoCity">
+                            <h3>Đà Nẵng</h3>
+                            <p>1808 Chỗ ở</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- City End -->
+
+        <!-- Room Start -->
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Deal Mới Mỗi Ngày</p>
+                </div>
+                <div class="description">
+                    <p>Khám phá ngay chỗ ở mới giảm giá từ 15% trở lên. Nhập mã THUVIVU để nhận thêm giảm giá lên tới 1
+                        triệu đồng! </p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme slider5img">
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html"> <img src="img/imgRoom/room1.jpg" alt=""></a>
+
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ DỊCH VỤ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html"> <img src="img/imgRoom/room2.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">BIỆT THỰ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html"> <img src="img/imgRoom/room3.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ STUDIO</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html"> <img src="img/imgRoom/room4.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ CHUNG CƯ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html"> <img src="img/imgRoom/room5.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">NHÀ RIÊNG</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room6.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ CHUNG CƯ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room7.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ DỊCH VỤ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Chỗ ở đậm chất "Vintage"</p>
+                </div>
+                <div class="description">
+                    <p>Một sự kết hợp giao hoà giữa cổ điển và hiện đại </p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme slider5img">
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room8.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ DỊCH VỤ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">Bawhome - Casa D' Arte</h2>
+                                <p></p>
+                                <p class="card-info-room">5 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">1,150,000đ/đêm
+                                    <p class="card-location-room">Hoàn Kiếm, Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room9.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">BIỆT THỰ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room10.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ STUDIO</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room11.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ CHUNG CƯ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room12.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">NHÀ RIÊNG</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room13.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ CHUNG CƯ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room14.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ STUDIO</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">HaNoi 1991 homestay</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">450,000đ/đêm
+                                    <p class="card-location-room">Cầu Giấy, Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Pool Party - Khuấy động kỳ nghỉ</p>
+                </div>
+                <div class="description">
+                    <p>Cùng hội bạn thân "trốn" khỏi những bộn bề cuộc sống </p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme slider5img">
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room15.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ DỊCH VỤ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">Bawhome - Casa D' Arte</h2>
+                                <p></p>
+                                <p class="card-info-room">5 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">1,150,000đ/đêm
+                                    <p class="card-location-room">Hoàn Kiếm, Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room16.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">BIỆT THỰ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room17.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ STUDIO</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="discount">
+                            <p>-20% Hôm nay</p>
+                        </div>
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room18.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ CHUNG CƯ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room19.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">NHÀ RIÊNG</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room20.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ CHUNG CƯ</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">COriana Villa Đà Lạt 103- Phòng 2 Người</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">150,000đ/đêm <span
+                                        style="margin-left: 20px; font-weight: 100;"> <s>250,000đ</s> </span></p>
+                                <p class="card-location-room">Đà Lạt, Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgRoom/room12.jpg" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">CĂN HỘ STUDIO</p>
+                            <div class="card-body">
+                                <h2 class="card-name-room">HaNoi 1991 homestay</h2>
+                                <p></p>
+                                <p class="card-info-room">2 Khách - 1 Phòng ngủ - 1 Phòng tắm</p>
+                                <p class="card-price-room">450,000đ/đêm
+                                    <p class="card-location-room">Cầu Giấy, Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Room End -->
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Vinhomes</p>
+                </div>
+                <div class="description">
+                    <p>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam</p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme slider4img">
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/centralpark.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">VINHOMES CENTRAL PARK - TP HCM</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Hòa mình vào nhịp sống sôi động của khu đồ thị hiện đại bậc
+                                    nhất Sài Thành</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/landmark81.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">VINHOMES LANDMARK 81 - TP HCM</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Chạm tay vào bầu trời và thu về tầm mắt toàn cảnh vẻ đẹp Sài
+                                    Gòn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/goldenriver.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Vinhomes Golden River - TP. HCM</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Tan chảy trước một Sài Gòn lãng mạn của những ngọn đèn phố
+                                    lung linh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/timescity.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Vinhomes Times City - Hà Nội</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Tận hưởng không gian sống lý tưởng trong khu đô thị đáng sống
+                                    bậc nhất tại thành phố Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/metropolis.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Vinhomes Metropolis - Hà Nội</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Ngỡ ngàng trước một Hà Nội thật khác khi phố đã lên đèn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/royalcity.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Vinhomes Royal City - Hà Nội</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Lạc giữa một “châu Âu thu nhỏ” ngay tại Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/dragonbay.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Vinhomes Dragon Bay - Hạ Long</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Bừng tỉnh trong ánh nắng tràn ngập khắp căn phòng giữa Hạ Long
+                                    xanh biếc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/roomlist-explore.html">  <img src="img/imgRoom/greenbay.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Vinhomes Green Bay - Hà Nội</p>
+                            <div class="card-body">
+                                <p class="card-info-room">Trải nghiệm thiên đường sống đích thực với những đặc quyền
+                                    chưa hề có</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Gợi ý khám phá</p>
+                </div>
+                <div class="description">
+                    <p>Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên</p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme slider3Img">
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Thông tin hữu ích dành cho chủ nhà (For host)</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest1.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Thông tin homestay</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest2.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest3.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest4.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest5.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest6.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest7.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest8.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest9.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <div class="lbl_promotion">
+                            <p>Khuyến mãi hot 2019</p>
+                        </div>
+                        <a href="/roomlist.html">  <img src="img/imgDiscount/suggest10.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-topic">
+            <div class="header">
+                <div class="title">
+                    <p>Hướng dẫn sử dụng</p>
+                </div>
+                <div class="description">
+                    <p>Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng</p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme slider5img">
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgUserManual/bankingTransfer.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Chuyển khoản ngân hàng</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgUserManual/inviteFriend.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Hướng dẫn mời bạn</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgUserManual/paymentOnline.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Cổng thanh toán trực tuyến</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgUserManual/WaytoBooking.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Cách đặt phòng</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="/room-detail.html">  <img src="img/imgUserManual/useDiscount.png" alt=""></a>
+                        <div class="card">
+                            <p class="card-name-type-room">Cách dùng mã giảm giá</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    	<!-- Footer -->
+	<footer class="footer mt-auto p-5">
+		<div class="row">
+			<div class="col-12 col-xl-2 col-md-4 text-lg-left text-center">
+				<a href="homepage.html">
+					<img src="./img/logo-text.png" alt="#">
+				</a>
+			</div>
+			<div class="col-xl-8 col-md-6 col-12 d-none d-lg-flex align-items-center">
+				<ul class="footer-menu d-flex text-left justify-content-start">
+					<li><a href="#" class="" rel="nofollow">Về chúng tôi</a></li>
+					<li><a href="#" class="" rel="nofollow">Chính sách và điều khoản sử dụng</a></li>
+					<li><a href="#" class="" rel="nofollow">Bảo mật</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-12 d-none d-lg-flex align-items-center text-right justify-content-lg-end">
+				<a class="ml-2" href="https://www.instagram.com/Travelux" target="_blank" rel="nofollow">
+					<svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 24px; height: 24px;">
+						<g fill="none" fill-rule="evenodd">
+							<circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle>
+							<path pid="1" fill="#FFF"
+								d="M14.333 12c0-.644-.228-1.194-.683-1.65A2.248 2.248 0 0 0 12 9.667c-.644 0-1.194.228-1.65.683A2.248 2.248 0 0 0 9.667 12c0 .644.228 1.194.683 1.65a2.248 2.248 0 0 0 1.65.683c.644 0 1.194-.228 1.65-.683a2.248 2.248 0 0 0 .683-1.65zm1.258 0c0 .997-.35 1.844-1.048 2.543-.699.699-1.546 1.048-2.543 1.048-.997 0-1.844-.35-2.543-1.048-.699-.699-1.048-1.546-1.048-2.543 0-.997.35-1.844 1.048-2.543.699-.699 1.546-1.048 2.543-1.048.997 0 1.844.35 2.543 1.048.699.699 1.048 1.546 1.048 2.543zm.985-3.737a.81.81 0 0 1-.247.592.808.808 0 0 1-.592.247.808.808 0 0 1-.592-.247.808.808 0 0 1-.247-.592c0-.23.082-.428.247-.592a.808.808 0 0 1 .592-.247.81.81 0 0 1 .592.247.808.808 0 0 1 .247.592zM12 6.258l-.697-.005a49.446 49.446 0 0 0-.962 0c-.219.003-.512.012-.88.028-.367.015-.68.045-.938.09a3.654 3.654 0 0 0-.652.17 2.365 2.365 0 0 0-.802.528c-.23.23-.407.498-.529.802a3.654 3.654 0 0 0-.168.652 7.223 7.223 0 0 0-.091.939c-.016.367-.025.66-.028.88a49.9 49.9 0 0 0 0 .96l.005.698-.005.697c-.003.423-.003.743 0 .962.003.219.012.512.028.88.015.367.045.68.09.938.046.258.103.476.17.652a2.375 2.375 0 0 0 1.33 1.331c.176.066.394.123.652.168.258.046.571.076.939.091.367.016.66.025.88.028.218.003.538.003.96 0l.698-.005.697.005c.423.003.743.003.962 0 .219-.003.512-.012.88-.028.367-.015.68-.045.938-.09.258-.046.476-.103.652-.17a2.375 2.375 0 0 0 1.331-1.33c.066-.176.123-.394.168-.652.046-.258.076-.571.091-.939.016-.367.025-.66.028-.88a49.9 49.9 0 0 0 0-.96L17.742 12l.005-.697c.003-.423.003-.743 0-.962a33.766 33.766 0 0 0-.028-.88 7.223 7.223 0 0 0-.09-.938 3.654 3.654 0 0 0-.17-.652 2.365 2.365 0 0 0-.528-.802 2.365 2.365 0 0 0-.802-.529 3.654 3.654 0 0 0-.652-.168 7.223 7.223 0 0 0-.939-.091c-.367-.016-.66-.025-.88-.028a49.9 49.9 0 0 0-.96 0L12 6.258zM19 12c0 1.392-.015 2.355-.046 2.89-.06 1.263-.437 2.242-1.13 2.934-.692.693-1.67 1.07-2.935 1.13-.534.03-1.497.046-2.889.046-1.392 0-2.355-.015-2.89-.046-1.263-.06-2.242-.437-2.934-1.13-.693-.692-1.07-1.67-1.13-2.935C5.016 14.355 5 13.392 5 12c0-1.392.015-2.355.046-2.89.06-1.263.437-2.242 1.13-2.934.692-.693 1.67-1.07 2.935-1.13C9.645 5.016 10.608 5 12 5c1.392 0 2.355.015 2.89.046 1.263.06 2.242.437 2.934 1.13.693.692 1.07 1.67 1.13 2.935.03.534.046 1.497.046 2.889z">
+							</path>
+						</g>
+					</svg>
+				</a>
+				<a class="ml-2" href="https://www.youtube.com/c/homestaytv" target="_blank" rel="nofollow">
+					<svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 24px; height: 24px;">
+						<g fill="none" fill-rule="evenodd">
+							<circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle>
+							<path pid="1" fill="#FFF"
+								d="M10.679 13.884l3.865-1.997-3.865-2.02v4.017zM12.156 7c.894 0 1.758.012 2.591.036.834.024 1.445.05 1.833.076l.583.032a5.326 5.326 0 0 1 .32.036l.187.036c.088.016.164.037.228.064.064.026.138.06.224.103.085.043.167.095.247.156a1.894 1.894 0 0 1 .356.36c.05.066.127.222.231.467.104.245.174.513.212.806.042.341.076.704.1 1.09.024.386.038.688.044.907v1.405c.005.772-.043 1.544-.144 2.316a3.186 3.186 0 0 1-.2.795c-.096.237-.18.4-.255.491l-.112.136c-.075.08-.152.15-.232.211-.08.062-.162.112-.247.152a6.87 6.87 0 0 1-.224.1c-.064.027-.14.048-.228.064l-.191.036a4.882 4.882 0 0 1-.315.036c-1.337.1-3.006.151-5.008.151-1.102-.01-2.06-.027-2.871-.051a62.25 62.25 0 0 1-1.601-.06l-.392-.032-.287-.032a3.791 3.791 0 0 1-.435-.08 2.454 2.454 0 0 1-.408-.168 1.597 1.597 0 0 1-.575-.475c-.05-.066-.127-.222-.231-.467a3.04 3.04 0 0 1-.212-.807c-.042-.34-.076-.704-.1-1.09A25.651 25.651 0 0 1 5 12.894v-1.406c-.005-.772.043-1.544.144-2.316.037-.293.104-.557.2-.794.096-.237.18-.401.255-.492l.112-.135c.075-.08.152-.15.232-.212.08-.061.162-.113.247-.156a3.65 3.65 0 0 1 .224-.103c.064-.027.14-.048.228-.064l.187-.036a5.326 5.326 0 0 1 .32-.036C8.485 7.048 10.154 7 12.156 7z">
+							</path>
+						</g>
+					</svg>
+				</a>
+				<a class="ml-2" href="https://www.facebook.com/Travelux/" target="_blank" rel="nofollow">
+					<svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 24px; height: 24px;">
+						<g fill="none" fill-rule="evenodd">
+							<circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle>
+							<path pid="1" fill="#FFF"
+								d="M15.429 5.242v2.176h-1.246c-.455 0-.762.098-.921.296-.159.198-.238.495-.238.89v1.558h2.325l-.31 2.44h-2.015v6.255h-2.429v-6.255H8.571v-2.44h2.024V8.365c0-1.022.275-1.814.826-2.377.55-.564 1.283-.845 2.198-.845.778 0 1.381.033 1.81.099z">
+							</path>
+						</g>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 footer-copyright mt-5 text-lg-left text-center">
+				© 2019 Travelux. Bản quyền thuộc về Công ty TNHH Travelux Việt Nam. Mọi hành vi sao chép đều là phạm pháp
+				nếu không có sự cho phép bằng văn bản của chúng tôi.
+			</div>
+		</div>
+	</footer>
+
+    <!-- Script -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <script src="owl-carousel/js/owl.carousel.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(() => {
+         
+            $("#btnSearch").on("click", function () {
+                window.location.href = "/roomlist.html";
+            })
+        });
+    </script>
+</body>
+
+</html>

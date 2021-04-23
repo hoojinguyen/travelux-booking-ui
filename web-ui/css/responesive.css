@@ -1,0 +1,230 @@
+@media (max-width: 1366px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 1920px) {
+  .pd-left-right {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 1080px) {
+  .pd-left-right {
+    padding: 0 3rem;
+  }
+
+  .owl-prev span {
+    left: -25px !important;
+  }
+
+  .owl-next span {
+    right: -25px !important;
+  }
+  .slider-topic {
+    margin: 10px 20px 10px 20px;
+  }
+  .slider .sliderCity .item img {
+    height: 280px;
+  }
+
+  .slider-topic .header .description {
+    font-size: 1.2em;
+  }
+
+  /* Room detail start    */
+
+  .pd-room-detail {
+    padding: 0 5rem;
+  }
+
+  .slider-show-image .slider-detail-room .item img {
+    height: 350px;
+  }
+
+  .book-discount p {
+    width: 60%;
+  }
+
+  .info-host img {
+    max-width: 40%;
+  }
+
+  .info-host .name-host {
+    padding-left: 10px;
+  }
+
+  .info-support small {
+    padding: 0px;
+    margin-left: 20px;
+    font-size: 0.6em;
+  }
+
+  .info-title-flash-sale .title-flash-sale .title-flash-sale-right {
+    font-size: 0.8em;
+  }
+
+  .info-title-flash-sale .title-flash-sale .title-flash-sale-left {
+    padding-left: 80px;
+    font-size: 0.8em;
+  }
+
+  .info-body-flash-sale .info-detail-sale {
+    margin-left: 40px;
+    font-size: 0.8em;
+  }
+
+  .info-body-flash-sale .info-detail-sale i {
+    font-size: 30px;
+    padding-left: 25px;
+    padding-top: 5px;
+  }
+
+  
+  .pd-bottom-footer{
+    padding-bottom: 0px;
+  }
+  
+
+  /* Room detail end    */
+
+  .nav-end-payment button {
+    margin-left: 100px;
+  }
+
+}
+@media (max-width: 991px) {
+  .pd-left-right {
+    padding: 0 2rem;
+  }
+
+  .owl-prev span {
+    display: none;
+  }
+
+  .owl-next span {
+    display: none;
+  }
+
+  .slider-topic {
+    margin: 10px;
+  }
+  .slider .sliderCity .item img {
+    height: 180px;
+  }
+
+  .slider-topic .header .title {
+    font-size: 24px;
+  }
+
+  .discount {
+    bottom: 245px;
+    left: 10px;
+  }
+  .discount p {
+    width: 80px;
+  }
+
+  /* Room detail start    */
+
+  .pd-room-detail {
+    padding: 0 1rem;
+  }
+
+  .breadcrump-room li {
+    padding-right: 5px;
+  }
+
+  .share {
+    text-align: left;
+  }
+
+  .slider-show-image .slider-detail-room .item img {
+    height: 280px;
+  }
+
+  .room-title h3 {
+    font-size: 2.5rem;
+  }
+
+  .room-title .code-room {
+    display: none;
+  }
+
+  .location p {
+    font-size: 1.3rem;
+  }
+
+  .type-room p {
+    font-size: 1.3rem;
+  }
+
+  .nav-body-right{
+    display: none;
+  }
+
+  .info-room {
+    margin-top: 20px;
+  }
+
+  .info-room .info-room-body p {
+    line-height: 25px;
+  }
+
+  .intro-note .note-content {
+    line-height: 25px;
+  }
+
+  .nav-end-booking {
+    display: block;
+  }
+
+  .nav-end-booking button {
+    margin-left: 60px;
+  }
+
+  .nav-mobile-show{
+    display: none;
+  }
+
+  .pd-bottom-footer{
+    padding-bottom: 100px;
+  }
+
+  
+  /* Room detail end    */
+
+  /* Payment methods Start */
+
+  .mr-top-payment{
+    margin-top: 20px;
+  }
+  .detail-booking-display{
+    display: none;
+  }
+  .button-payment{
+    display: none;
+  }
+
+  .footer{
+    display: none;
+  }
+
+  .nav-end-payment {
+    display: block;
+  }
+
+  .nav-end-payment button {
+    margin-left: 60px;
+  }
+
+  .nav-end-cancel{
+    display: none;
+  }
+
+  .body-content{
+    padding-top: 60px;
+  }
+  
+  /* Payment methods End */
+}
